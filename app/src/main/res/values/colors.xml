@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#000000</color>
+    <color name="colorDecorative">#88bb0000</color>
+    <color name="colorLine">#22000000</color>
+    <color name="colorBar">#e1ddcd</color>
+    <color name="colorTrue">#aad8b0</color>
+    <color name="colorTransparentTrue">#00aad8b0</color>
+    <color name="colorTransparentDecorative">#00bb0000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorDialog">#f2eede</color>
+</resources>

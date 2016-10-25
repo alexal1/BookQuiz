@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paperbitmap"
+    android:orientation="vertical"
+    android:onClick="onScreenClick"
+    android:weightSum="4"
+    tools:context="com.alex_aladdin.bookquiz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/colorBar">
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star"
+            android:alpha="0.2"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/star3"
+            android:layout_toStartOf="@+id/star3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star"
+            android:alpha="0.2"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/star2"
+            android:layout_toStartOf="@+id/star2"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star"
+            android:alpha="0.2"
+            tools:ignore="ContentDescription"/>
+
+        <!-- Правый разделитель кнопки rate !-->
+        <View
+            android:id="@+id/rate_line2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/star1"
+            android:layout_toStartOf="@id/star1"
+            android:layout_alignBottom="@id/star1"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="?android:attr/dividerVertical"/>
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/rate_line2"
+            android:layout_toStartOf="@id/rate_line2"
+            android:layout_alignBottom="@id/star1"
+            android:background="?android:attr/selectableItemBackground"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            android:text="@string/rate"
+            android:onClick="onButtonRateClick"/>
+
+        <!-- Левый разделитель кнопки rate !-->
+        <View
+            android:id="@+id/rate_line1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/rate"
+            android:layout_toStartOf="@id/rate"
+            android:layout_alignBottom="@id/star1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="?android:attr/dividerVertical"/>
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rate_line1"
+            android:layout_toStartOf="@id/rate_line1"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:verticalScrollbarPosition="left"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorText"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp" />
+
+    </ScrollView>
+
+    <!-- Линия !-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorLine" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:inputType="textPassword" />
+
+    <com.alex_aladdin.bookquiz.UnderlinedTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/colorText"
+        app:underlineColor="@color/colorDecorative"
+        app:underlineWidth="3dp" />
+</LinearLayout>

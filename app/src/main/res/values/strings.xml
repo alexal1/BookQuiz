@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Угадай Книгу</string>
+
+    <string name="page">Стр.</string>
+    <string name="rate">Google Play</string>
+
+    <string name="dialog_button_next">Далее</string>
+    <string name="dialog_button_share">Поделиться ВК</string>
+
+    <string name="dialog_hello_title">ПРИВЕТСТВИЕ</string>
+    <string name="dialog_hello_message">Спасибо что скачали это приложение! Прочитайте рассказ некоего персонажа из одной очень известной книги, а потом попытайтесь угадать её название.\n\nКогда вы нажимаете на правильную букву, вам открываются сразу все такие буквы. Поэтому даже если совсем не будет идей, стоит всё равно проверить букву-другую — это может навести на ответ.</string>
+
+    <string name="dialog_congrats_title">ПОЗДРАВЛЕНИЕ</string>
+    <string name="dialog_congrats_message_part1_star1">Ура! Хоть и не сразу, но у вас получилось. Действительно, этот рассказ мы могли бы услышать от</string>
+    <string name="dialog_congrats_message_part1_star2">Ого! Вы догадались всего с одной ошибкой. Это и правда эпизод из жизни</string>
+    <string name="dialog_congrats_message_part1_star3">Поразительно! У вас феноменальная память. Вы совершенно правы, это очень похоже на мысли в голове</string>
+    <string name="dialog_congrats_message_part2">из книги</string>
+
+    <string name="dialog_tip_title">ПОДСКАЗКА</string>
+
+    <integer name="com_vk_sdk_AppId">5661609</integer>
+    <string name="share_error_auth">Авторизация не удалась</string>
+    <string name="share_error_other">Не удалось добавить пост</string>
+    <string name="share_success">На стену добавлен пост:</string>
+    <string name="share_male_guessed">Я угадал книгу</string>
+    <string name="share_female_guessed">Я угадала книгу</string>
+    <string name="share_by_character">по рассказу</string>
+    <string name="share_tags">#УгадайКнигу #Android</string>
+    <string name="photo_id">photo106103706_437157239</string>
+</resources>
